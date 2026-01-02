@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>PokéTipos</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="logo">PokéTipos</div>
+      <input id="search" placeholder="Buscar Pokémon (nome ou #)" inputmode="search" />
+    </header>
+
+    <main>
+      <section id="left">
+        <div id="list-container"></div>
+        <div id="pagination">
+          <button id="prev">Anterior</button>
+          <span id="page-info"></span>
+          <button id="next">Próxima</button>
+        </div>
+      </section>
+
+      <section id="right">
+        <div id="pokemon-card" class="card empty">
+          <div class="placeholder">Selecione um Pokémon</div>
+        </div>
+
+        <div id="type-chart" class="card">
+          <h3>Tabela de Tipos</h3>
+          <div id="chart-wrap"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
